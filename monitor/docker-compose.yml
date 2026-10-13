@@ -1,0 +1,21 @@
+services:
+  hkmon:
+    build: .
+    container_name: hkmon
+    # Host networking is required for mDNS multicast and to ping LAN devices.
+    network_mode: host
+    restart: unless-stopped
+    cap_drop: [ALL]
+    cap_add: [NET_RAW]
+    volumes:
+      - ./data:/data
+      - ./devices.yaml:/config/devices.yaml:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      TZ: America/Los_Angeles
+      INTERVAL: "60"
+      DOWN_AFTER: "3"
+      HTTP_PORT: "8088"
+      # e.g. https://ntfy.sh/<your-secret-topic>; leave empty to disable alerts.
+      NTFY_URL: ${NTFY_URL:-}
+      NTFY_TOKEN: ${NTFY_TOKEN:-}

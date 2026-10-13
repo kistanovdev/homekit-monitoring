@@ -1,0 +1,74 @@
+# Devices to monitor. Edit names freely; `mdns` entries tie a device to its
+# Bonjour instance name or hostname so its IP and HomeKit port are found even
+# if DHCP gives it a new address. `ip` is only a fallback.
+#
+# check: auto (default) = ping, then the HomeKit TCP port; presence = mDNS only;
+#        service = HomeKit TCP port only (for things running on this Pi).
+# notify: false = record outages but don't send phone alerts.
+
+groups:
+  infrastructure:
+    - {name: Router, ip: 192.168.0.1, mac: "68:7f:f0:25:44:d0", tcp_port: 80}
+    - {name: Homebridge, mdns: ["Homebridge CADC 0876"], ip: 192.168.0.52, check: service}
+    - {name: Homebridge Dyson bridge, mdns: ["homebridge-dyson-pure-cool 6ADC 6ADC"], ip: 192.168.0.52, check: service}
+
+  apple-hubs:
+    - {name: Living Room Apple TV, mdns: ["Living Room Apple TV", "Living-Room-Apple-TV"], ip: 192.168.0.215}
+    - {name: Living Room HomePod mini, mdns: ["Living Room", "HomePodSensor 777056 B9EC"], ip: 192.168.0.71}
+    - {name: Master Bathroom HomePod mini, mdns: ["Master Bathroom", "HomePodSensor 28165 69A9"], ip: 192.168.0.119}
+    - {name: Playroom HomePod mini, mdns: ["Playroom", "HomePodSensor 855221 262A"], ip: 192.168.0.86}
+    - {name: Daniel's Office HomePod, mdns: ["Daniel's Office (2)", "Daniels-Office-2"], ip: 192.168.0.14}
+    - {name: Guest Room Apple TV, mdns: ["Guest Room", "Guest-Room"], ip: 192.168.0.96}
+
+  hubs:
+    - {name: Aqara Hub M3, mdns: ["Aqara-Hub-M3-B9FB"], ip: 192.168.0.43, mac: "18:c2:3c:48:b1:48"}
+    - {name: Aqara Camera Hub G2H, mdns: ["Camera-Hub-G2H-EC51"], ip: 192.168.0.44, mac: "54:ef:44:ca:ec:51"}
+    - {name: Aqara Camera Hub G3, mdns: ["Camera-Hub-G3-5826"], ip: 192.168.0.216, mac: "54:ef:44:89:58:26"}
+    - {name: Aqara Doorbell Repeater, mdns: ["Doorbell Repeater-5BFF"], ip: 192.168.0.166, mac: "54:ef:44:5d:5b:ff"}
+    - {name: eufy HomeBase 2, mdns: ["eufy HomeBase2-0984"], ip: 192.168.0.214, mac: "10:2c:b1:68:0b:97"}
+    - {name: Lutron Caseta Bridge, mdns: ["Smart Bridge 2", "Lutron-08402843"], ip: 192.168.0.186, mac: "88:0c:e0:0e:52:0c"}
+
+  meross:
+    - {name: Garage Door, mdns: ["MSG100-b147"], ip: 192.168.0.250, mac: "c4:e7:ae:05:b1:47"}
+    - {name: Dimmer 7c2a, mdns: ["MSS560-7c2a"], ip: 192.168.0.129, mac: "c4:e7:ae:0c:7c:2a"}
+    - {name: Dimmer 7d4c, mdns: ["MSS560-7d4c"], ip: 192.168.0.242, mac: "c4:e7:ae:0c:7d:4c"}
+    - {name: Dimmer 8006, mdns: ["MSS560-8006"], ip: 192.168.0.157, mac: "c4:e7:ae:0c:80:06"}
+    - {name: Dimmer 80f6, mdns: ["MSS560-80f6"], ip: 192.168.0.145, mac: "c4:e7:ae:0c:80:f6"}
+    - {name: Switch 64e7, mdns: ["MSS510-64e7"], ip: 192.168.0.132, mac: "48:e1:e9:ef:64:e7"}
+    - {name: Switch 6643, mdns: ["MSS510-6643"], ip: 192.168.0.126, mac: "48:e1:e9:ef:66:43"}
+    - {name: Switch 6691, mdns: ["MSS510-6691"], ip: 192.168.0.204, mac: "48:e1:e9:ef:66:91"}
+    - {name: Switch 6881, mdns: ["MSS510-6881"], ip: 192.168.0.94, mac: "48:e1:e9:ef:68:81"}
+    - {name: Switch 695a, mdns: ["MSS510-695a"], ip: 192.168.0.134, mac: "48:e1:e9:ef:69:5a"}
+    - {name: Switch 699f, mdns: ["MSS510-699f"], ip: 192.168.0.203, mac: "48:e1:e9:ef:69:9f"}
+    - {name: Switch 6a6f, mdns: ["MSS510-6a6f"], ip: 192.168.0.234, mac: "48:e1:e9:ef:6a:6f"}
+    - {name: Switch 6bbe, mdns: ["MSS510-6bbe"], ip: 192.168.0.140, mac: "48:e1:e9:ef:6b:be"}
+    - {name: Switch 6bee, mdns: ["MSS510-6bee"], ip: 192.168.0.188, mac: "48:e1:e9:ef:6b:ee"}
+    - {name: Switch 6c03, mdns: ["MSS510-6c03"], ip: 192.168.0.32, mac: "48:e1:e9:ef:6c:03"}
+    - {name: Switch 6d21, mdns: ["MSS510-6d21"], ip: 192.168.0.141, mac: "48:e1:e9:ef:6d:21"}
+    - {name: Switch 6d50, mdns: ["MSS510-6d50"], ip: 192.168.0.189, mac: "48:e1:e9:ef:6d:50"}
+    - {name: Switch 6d71, mdns: ["MSS510-6d71"], ip: 192.168.0.221, mac: "48:e1:e9:ef:6d:71"}
+    - {name: Switch 6d9f, mdns: ["MSS510-6d9f"], ip: 192.168.0.15, mac: "48:e1:e9:ef:6d:9f"}
+    - {name: Switch 6da3, mdns: ["MSS510-6da3"], ip: 192.168.0.19, mac: "48:e1:e9:ef:6d:a3"}
+    - {name: Switch 6da5, mdns: ["MSS510-6da5"], ip: 192.168.0.21, mac: "48:e1:e9:ef:6d:a5"}
+    - {name: Switch 6df5, mdns: ["MSS510-6df5"], ip: 192.168.0.101, mac: "48:e1:e9:ef:6d:f5"}
+    - {name: Switch 6e1a, mdns: ["MSS510-6e1a"], ip: 192.168.0.213, mac: "48:e1:e9:ef:6e:1a"}
+    - {name: Switch 6e90, mdns: ["MSS510-6e90"], ip: 192.168.0.79, mac: "48:e1:e9:ef:6e:90"}
+    - {name: Switch 6e9a, mdns: ["MSS510-6e9a"], ip: 192.168.0.89, mac: "48:e1:e9:ef:6e:9a"}
+    - {name: Switch 6f87, mdns: ["MSS510-6f87"], ip: 192.168.0.149, mac: "48:e1:e9:ef:6f:87"}
+    - {name: Switch 705a, mdns: ["MSS510-705a"], ip: 192.168.0.183, mac: "48:e1:e9:ef:70:5a"}
+
+  wifi-other:
+    - {name: VOCOlinc Bulb, mdns: ["VOCOlinc-L3-17ff08"], ip: 192.168.0.90, mac: "e4:23:54:17:ff:08"}
+    - {name: Nanoleaf Shapes 66F8, mdns: ["Shapes 66F8", "Shapes-66F8"], ip: 192.168.0.190, mac: "80:8a:f7:10:66:f8"}
+    - {name: Nanoleaf Shapes 6CA6, mdns: ["Shapes 6CA6", "Shapes-6CA6"], ip: 192.168.0.75, mac: "80:8a:f7:10:6c:a6"}
+    - {name: Nanoleaf Matter device, mdns: ["808AF723C8CF"], ip: 192.168.0.139, mac: "80:8a:f7:23:c8:cf"}
+    - {name: Unknown Matter device, mdns: ["3C3174DB5528"], ip: 192.168.0.193, mac: "3c:31:74:db:55:28"}
+
+  thread:
+    - {name: Front Door Lock, mdns: ["Encode Plus", "Encode-Plus"], check: presence}
+    - {name: Nanoleaf A19 1WWJ, mdns: ["Nanoleaf A19 1WWJ 10681"], check: presence}
+    - {name: Nanoleaf A19 3R4X, mdns: ["Nanoleaf A19 3R4X 52626"], check: presence}
+    - {name: Nanoleaf A19 4565, mdns: ["Nanoleaf A19 4565 40885"], check: presence}
+    - {name: Nanoleaf A19 96M2, mdns: ["Nanoleaf A19 96M2 593"], check: presence}
+    - {name: Matter Thread device A, mdns: ["3E8F27DE3E6647FC"], check: presence}
+    - {name: Matter Thread device B, mdns: ["7A42F12275292777"], check: presence}
