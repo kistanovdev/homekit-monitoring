@@ -1,0 +1,2 @@
+# Full database snapshots stay local; the text exports are committed.
+db/

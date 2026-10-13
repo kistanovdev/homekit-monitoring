@@ -1,0 +1,17 @@
+{"ts": 1791856410.928023, "time": "2026-10-12 18:53:30", "name": "monitor", "kind": "monitor", "detail": "monitor started"}
+{"ts": 1791860976.9329736, "time": "2026-10-12 20:09:36", "name": "monitor", "kind": "monitor", "detail": "monitor started"}
+{"ts": 1791862967.6809983, "time": "2026-10-12 20:42:47", "name": "Thread network", "kind": "thread", "detail": "MyHome4: 7 border routers -> MyHome4: 6 border routers"}
+{"ts": 1791863027.5789628, "time": "2026-10-12 20:43:47", "name": "Thread network", "kind": "thread", "detail": "MyHome4: 6 border routers -> MyHome4: 7 border routers"}
+{"ts": 1791871187.764725, "time": "2026-10-12 22:59:47", "name": "Matter Thread device B", "kind": "down", "detail": "not advertised in mDNS"}
+{"ts": 1791873407.8829978, "time": "2026-10-12 23:36:47", "name": "Matter Thread device B", "kind": "up", "detail": "back after 39m"}
+{"ts": 1791877249.9760778, "time": "2026-10-13 00:40:49", "name": "Kitchen Switch 6d71", "kind": "down", "detail": "no reply from 192.168.0.221"}
+{"ts": 1791877669.6812987, "time": "2026-10-13 00:47:49", "name": "Kitchen Switch 6d71", "kind": "up", "detail": "back after 9m"}
+{"ts": 1791877670.3615558, "time": "2026-10-13 00:47:50", "name": "Kitchen Switch 6d71", "kind": "config", "detail": "HomeKit config number 2 -> 1 (firmware update, re-pair or accessory change)"}
+{"ts": 1791879532.7907794, "time": "2026-10-13 01:18:52", "name": "Nanoleaf Matter device", "kind": "down", "detail": "no reply from 192.168.0.139 (mDNS record still cached)"}
+{"ts": 1791885350.072721, "time": "2026-10-13 02:55:50", "name": "Matter Thread device B", "kind": "down", "detail": "not advertised in mDNS"}
+{"ts": 1791885470.099994, "time": "2026-10-13 02:57:50", "name": "Matter Thread device B", "kind": "up", "detail": "back after 4m"}
+{"ts": 1791912404.7485507, "time": "2026-10-13 10:26:44", "name": "monitor", "kind": "monitor", "detail": "monitor started"}
+{"ts": 1791912537.1527004, "time": "2026-10-13 10:28:57", "name": "Switch 74c2", "kind": "down", "detail": "no reply from 192.168.0.147"}
+{"ts": 1791912707.8503692, "time": "2026-10-13 10:31:47", "name": "monitor", "kind": "monitor", "detail": "monitor started"}
+{"ts": 1791912721.2060153, "time": "2026-10-13 10:32:01", "name": "Switch 74c2", "kind": "up", "detail": "back after 5m"}
+{"ts": 1791913120.9650335, "time": "2026-10-13 10:38:40", "name": "monitor", "kind": "monitor", "detail": "monitor started"}

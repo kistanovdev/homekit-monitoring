@@ -1,0 +1,117 @@
+date,name,checks,ok,availability_pct
+2026-10-12,Aqara Camera Hub G2H,307,307,100.00
+2026-10-12,Aqara Camera Hub G3,307,306,99.67
+2026-10-12,Aqara Doorbell Repeater,307,307,100.00
+2026-10-12,Aqara Hub M3,307,307,100.00
+2026-10-12,Baby Bedroom Dimmer,307,307,100.00
+2026-10-12,Bathroom Switch (left),307,307,100.00
+2026-10-12,Bathroom Switch (middle),307,307,100.00
+2026-10-12,Bathroom Switch (right),307,307,100.00
+2026-10-12,Bedroom Dimmer (left),307,307,100.00
+2026-10-12,Bedroom Switch (middle),307,307,100.00
+2026-10-12,DNS,307,307,100.00
+2026-10-12,Daniel's Office HomePod,307,307,100.00
+2026-10-12,Front Door Lock,307,307,100.00
+2026-10-12,Garage Door,307,307,100.00
+2026-10-12,Guest Room Apple TV,307,307,100.00
+2026-10-12,Guest Room Dimmer,307,307,100.00
+2026-10-12,Half Bath Switch (left),307,307,100.00
+2026-10-12,Half Bath Switch (right),307,307,100.00
+2026-10-12,Homebridge,307,307,100.00
+2026-10-12,Homebridge Dyson bridge,307,307,100.00
+2026-10-12,Internet,307,307,100.00
+2026-10-12,Kitchen Switch 6691,307,307,100.00
+2026-10-12,Kitchen Switch 6d71,307,306,99.67
+2026-10-12,Laundry Switch (unconfirmed),307,307,100.00
+2026-10-12,Living Room Apple TV,307,307,100.00
+2026-10-12,Living Room HomePod mini,307,307,100.00
+2026-10-12,Lutron Caseta Bridge,307,307,100.00
+2026-10-12,Master Bathroom HomePod mini,307,307,100.00
+2026-10-12,Master Bedroom Closet Light,307,307,100.00
+2026-10-12,Matter Thread device A,307,307,100.00
+2026-10-12,Matter Thread device B,307,268,87.30
+2026-10-12,Nanoleaf A19 1WWJ,307,307,100.00
+2026-10-12,Nanoleaf A19 3R4X,307,307,100.00
+2026-10-12,Nanoleaf A19 4565,307,307,100.00
+2026-10-12,Nanoleaf A19 96M2,307,307,100.00
+2026-10-12,Nanoleaf Matter device,307,306,99.67
+2026-10-12,Nanoleaf Shapes 66F8,307,307,100.00
+2026-10-12,Nanoleaf Shapes 6CA6,307,307,100.00
+2026-10-12,Playroom HomePod mini,307,307,100.00
+2026-10-12,Router,307,307,100.00
+2026-10-12,Second Thermostat (unconfirmed),307,307,100.00
+2026-10-12,Stairs Dimmer,307,307,100.00
+2026-10-12,Switch 6bee,307,307,100.00
+2026-10-12,Switch 6d21,307,307,100.00
+2026-10-12,Switch 6d9f,307,307,100.00
+2026-10-12,Switch 6da3,307,307,100.00
+2026-10-12,Switch 6da5,307,307,100.00
+2026-10-12,Switch 6df5,307,307,100.00
+2026-10-12,Switch 6e90,307,307,100.00
+2026-10-12,Switch 6e9a,307,307,100.00
+2026-10-12,Switch 705a,307,307,100.00
+2026-10-12,Thread network,307,307,100.00
+2026-10-12,Upstairs Bathroom Switch (left),307,307,100.00
+2026-10-12,Upstairs Bathroom Switch (middle),307,307,100.00
+2026-10-12,Upstairs Bathroom Switch (right),307,307,100.00
+2026-10-12,VOCOlinc Bulb,307,307,100.00
+2026-10-12,eufy HomeBase 2,307,307,100.00
+2026-10-13,Aqara Camera Hub G2H,638,638,100.00
+2026-10-13,Aqara Camera Hub G3,638,638,100.00
+2026-10-13,Aqara Doorbell Repeater,638,638,100.00
+2026-10-13,Aqara Hub M3,638,638,100.00
+2026-10-13,Baby Bedroom Dimmer,638,638,100.00
+2026-10-13,Bathroom Switch (left),638,638,100.00
+2026-10-13,Bathroom Switch (middle),638,638,100.00
+2026-10-13,Bathroom Switch (right),638,638,100.00
+2026-10-13,Bedroom Dimmer (left),638,638,100.00
+2026-10-13,Bedroom Switch (middle),638,638,100.00
+2026-10-13,DNS,638,638,100.00
+2026-10-13,Daniel's Office HomePod,638,638,100.00
+2026-10-13,Front Door Lock,638,638,100.00
+2026-10-13,Garage Door,638,638,100.00
+2026-10-13,Guest Room Apple TV,638,638,100.00
+2026-10-13,Guest Room Dimmer,638,638,100.00
+2026-10-13,Half Bath Switch (left),638,638,100.00
+2026-10-13,Half Bath Switch (right),638,638,100.00
+2026-10-13,Hallway Thermostat,12,12,100.00
+2026-10-13,Homebridge,638,638,100.00
+2026-10-13,Homebridge Dyson bridge,638,638,100.00
+2026-10-13,Internet,638,638,100.00
+2026-10-13,Kitchen Switch 6691,638,638,100.00
+2026-10-13,Kitchen Switch 6d71,638,629,98.59
+2026-10-13,Laundry Switch (unconfirmed),638,638,100.00
+2026-10-13,Living Room Apple TV,638,638,100.00
+2026-10-13,Living Room HomePod mini,638,638,100.00
+2026-10-13,Lutron Caseta Bridge,638,638,100.00
+2026-10-13,Master Bathroom HomePod mini,638,638,100.00
+2026-10-13,Master Bedroom Closet Light,638,638,100.00
+2026-10-13,Matter Thread device A,638,638,100.00
+2026-10-13,Matter Thread device B,638,634,99.37
+2026-10-13,Nanoleaf A19 1WWJ,638,638,100.00
+2026-10-13,Nanoleaf A19 3R4X,638,638,100.00
+2026-10-13,Nanoleaf A19 4565,638,638,100.00
+2026-10-13,Nanoleaf A19 96M2,638,638,100.00
+2026-10-13,Nanoleaf Matter device,638,75,11.76
+2026-10-13,Nanoleaf Shapes 66F8,638,638,100.00
+2026-10-13,Nanoleaf Shapes 6CA6,638,638,100.00
+2026-10-13,Playroom HomePod mini,638,638,100.00
+2026-10-13,Router,638,638,100.00
+2026-10-13,Second Thermostat (unconfirmed),638,638,100.00
+2026-10-13,Stairs Dimmer,638,638,100.00
+2026-10-13,Switch 6bee,638,638,100.00
+2026-10-13,Switch 6d21,638,638,100.00
+2026-10-13,Switch 6d9f,638,638,100.00
+2026-10-13,Switch 6da3,638,638,100.00
+2026-10-13,Switch 6da5,638,638,100.00
+2026-10-13,Switch 6df5,638,638,100.00
+2026-10-13,Switch 6e90,638,638,100.00
+2026-10-13,Switch 6e9a,638,638,100.00
+2026-10-13,Switch 705a,638,638,100.00
+2026-10-13,Switch 74c2,12,7,58.33
+2026-10-13,Thread network,638,638,100.00
+2026-10-13,Upstairs Bathroom Switch (left),638,638,100.00
+2026-10-13,Upstairs Bathroom Switch (middle),638,638,100.00
+2026-10-13,Upstairs Bathroom Switch (right),638,638,100.00
+2026-10-13,VOCOlinc Bulb,638,638,100.00
+2026-10-13,eufy HomeBase 2,638,638,100.00
