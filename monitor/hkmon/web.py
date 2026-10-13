@@ -1,6 +1,9 @@
 """Read-only web dashboard and JSON API, served from a background thread."""
 import html
 import json
+import os
+import sqlite3
+import tempfile
 import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -68,6 +71,7 @@ class Dashboard:
                     "/events": dash.events_page,
                     "/api/status": dash.api_status,
                     "/api/events": dash.api_events,
+                    "/api/backup": dash.api_backup,
                 }
                 fn = routes.get(url.path)
                 if not fn:
@@ -195,6 +199,18 @@ class Dashboard:
             "SELECT * FROM events WHERE ts > ? ORDER BY ts DESC LIMIT 2000", (since,))]
         con.close()
         return "application/json", json.dumps(rows).encode()
+
+    def api_backup(self, qs):
+        """Consistent snapshot of the whole database, safe to take while checks run."""
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "snapshot.db")
+            src = connect(self.db_path)
+            dst = sqlite3.connect(path)
+            src.backup(dst)
+            dst.close()
+            src.close()
+            with open(path, "rb") as f:
+                return "application/vnd.sqlite3", f.read()
 
     def _events(self, name: str | None, limit: int):
         con = connect(self.db_path)

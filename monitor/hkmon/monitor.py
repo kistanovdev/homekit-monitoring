@@ -6,7 +6,7 @@ import time
 from .config import Device, Settings
 from .mdns import MdnsWatcher, Service
 from .notify import Notifier
-from .probe import dns_ok, ping_ok, tcp_ok
+from .probe import arp_ok, dns_ok, ping_ok, tcp_ok
 from .store import DeviceState, Store
 
 log = logging.getLogger(__name__)
@@ -162,6 +162,8 @@ class Monitor:
             for port in dict.fromkeys(ports):
                 if await tcp_ok(ipv4, port):
                     return True, f"tcp {ipv4}:{port} (ignores ping)"
+            if d.check != "service" and await arp_ok(ipv4):
+                return True, f"arp {ipv4} (ignores ping)"
             cached = " (mDNS record still cached)" if matches else ""
             return False, f"no reply from {ipv4}{cached}"
 

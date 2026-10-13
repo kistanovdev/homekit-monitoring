@@ -3,7 +3,7 @@
 Runs on the Homebridge Pi (192.168.0.52) as the `hkmon` Docker container and
 checks every device in `devices.yaml` once a minute.
 
-- Wi-Fi/Ethernet devices: ping, falling back to the device's HomeKit TCP port.
+- Wi-Fi/Ethernet devices: ping, then the HomeKit TCP port, then ARP (for devices that ignore ping).
 - Thread devices: Bonjour (mDNS) presence, which goes through the border routers.
 - Built-in checks: Internet, DNS, and Thread network health (detects a split network).
 - Also records: Pi reboots (power cuts), HomeKit accessories losing their
